@@ -48,10 +48,6 @@ const ContactUs = () => {
               Whether you have a question or just want to say hi — our inbox is always open.
             </p>
             <p>
-              <i className="bi bi-geo-alt-fill" style={{ color: '#B47F69' }}></i>{' '}
-              416 Brighton Ave. Portland ME 04102
-            </p>
-            <p>
               <i className="bi bi-briefcase-fill" style={{ color: '#B47F69' }}></i>{' '}
               8AM–5PM on Weekdays and Saturday, Closed on Sunday
             </p>
