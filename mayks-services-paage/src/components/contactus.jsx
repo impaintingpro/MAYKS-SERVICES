@@ -15,7 +15,7 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://impaintingpro.onrender.com/send-email', {
+      const response = await fetch('https://mayks-services.onrender.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
