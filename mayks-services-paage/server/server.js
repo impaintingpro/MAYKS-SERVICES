@@ -51,7 +51,7 @@ app.post('/send-email', async (req, res) => {
                   <!-- Header -->
                   <tr style="background-color: #B47F69;">
                     <td align="center" style="padding: 30px;">
-                      <img src="/img/proto-logo.png" alt="Logo" style="max-height: 40px;" />
+                      <img src="https://mayks-services.onrender.com/img/proto-logo.png" alt="Logo" style="max-height: 40px;" />
                     </td>
                   </tr>
   
