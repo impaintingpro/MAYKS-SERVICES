@@ -1,0 +1,488 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.nav-bg-col{
+    background-color: #ab745e;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.logo-text{
+    font-family: "Playfair Display", serif;
+}
+.logo img {
+    height: 60px; /* control logo size */
+    object-fit: contain;
+}
+/* Button */
+.button-1 {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  background: linear-gradient(90deg, #E15FEB 0%, #FF5ABB 40%, #FF778B 60%, #FFA466 100%);
+  background-size: 200% 200%; /* Make the gradient larger to animate */
+  border-radius: 4px;
+  border: 0;
+  padding: 12px 24px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+/* On hover: animate the gradient movement */
+.button-1:hover {
+  background-position: 100% 50%; /* Shift the gradient on hover */
+  transition: background-position 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+/* .hero {
+  background-color: #B47F69;
+  overflow: hidden;
+  background-image: url('/img/Untitled design.mp4'); 
+  background-size: cover; 
+  background-position: center; 
+  min-height: 100vh;
+} */
+
+.hero-text {
+  font-size: 85px;
+  line-height: 1.1;
+}
+
+.sub-text-hero {
+  font-weight: bold;
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.round-icon {
+  width: 62px;
+  height: 62px;
+  box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
+  border-radius: 10%; /* Ensure the icon is perfectly round */
+  overflow: hidden; /* Hide any overflowing content */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.round-icon img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: contain; /* Ensure the image scales without distortion */
+  padding: 15px;
+}
+
+/* Responsive Breakpoints */
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 48px;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-text {
+    font-size: 36px;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* End Hero Section */
+
+
+/* Services Section */
+
+/* Section container background wrapper */
+.services-2,
+.services-1 {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+.bg-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/broom (3).png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 625.25px auto;
+  opacity: 0.25;
+  z-index: 1;
+}
+.bg-wrapper2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/paint-brush (1).png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 625.25px auto;
+  opacity: 0.25;
+  z-index: 1;
+}
+
+/* Make sure the content stays above the bg */
+.services-1 .container *:not(.bg-wrapper) {
+  position: relative;
+  z-index: 2;
+}
+/* .services-2 .container > *:not(.bg-wrapper) {
+  position: relative;
+  z-index: 2;
+} */
+
+.services-spacing {
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-size: 47px; /* Fixed: add px unit */
+  color: #212121;
+  line-height: 1.1;
+  text-align: center;
+}
+
+
+
+.spacing-y {
+  padding-block: 60px;
+}
+
+.r-spacing-y {
+  padding-top: 30px;
+}
+
+.r-spacing-y h4 {
+  font-weight: bold;
+  color: #212121;
+  line-height: 1.2;
+}
+
+.r-spacing-y p {
+  color: #BCBCBE;
+}
+
+/* Section Backgrounds */
+.services-1,
+.services-2 {
+  position: relative;
+  background-color: white;
+  padding-left: 0;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.services-1 h1,
+.services-1 .row,
+.services-2 h1,
+.services-2 .row {
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive round icons */
+.round-icon img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .aboutus-text {
+    font-size: 36px; /* Smaller font size for mobile */
+  }
+}
+
+/* Adjust for smaller viewports */
+@media (max-width: 480px) {
+  .services-spacing {
+    font-size: 36px; /* Further reduce font size for very small screens */
+  }
+}
+
+  /* end of services */
+
+  /* start about us */
+
+  .aboutus-text{
+    padding-top: 60px;
+    font-weight: bold;
+    font-size: 47px; /* default font size */
+    color: #212121;
+    line-height: 0.7;
+  }
+
+  /* Adjust the font size and padding for smaller screens */
+  @media (max-width: 768px) {
+    .aboutus-text {
+      font-size: 36px; /* Smaller font size for mobile */
+    }
+
+    .lead {
+      font-size: 16px; /* Adjust font size of paragraph */
+      padding-top: 0;
+    }
+
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .btn {
+      padding: 10px 20px; /* Adjust button padding */
+      font-size: 16px; /* Adjust font size for mobile */
+    }
+  }
+
+  /* Adjust for smaller viewports */
+  @media (max-width: 480px) {
+    .aboutus-text {
+      font-size: 36px; /* Further reduce font size for very small screens */
+      padding-top: 30px;
+    }
+
+    .lead {
+      font-size: 14px; /* Adjust paragraph font size for small screens */
+    }
+
+    .btn {
+      padding: 8px 16px; /* Reduce button padding */
+      font-size: 14px;
+    }
+  }
+
+  /* end about us */
+
+  /* Why chose us */
+  .wcu-spacing {
+    padding-block: 60px;
+  }
+  
+  .wcu-spacing h1 {
+    padding-bottom: 33px;
+    font-weight: bold;
+    font-size: 47px;
+    color: #212121;
+    line-height: 1.1;
+  }
+  
+  .cta {
+    padding-top: 66px;
+    text-align: center;
+  }
+  
+  .square-image {
+    border-radius: 0.5rem;
+    z-index: 1;
+    width: 100%; /* Ensures image resizes to the column width */
+    max-width: 350px; /* Adjust max width for better control */
+  }
+  
+  .rectangle {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border-radius: 0.5rem;
+    box-shadow: 0px 8px 16px rgba(64, 63, 63, 0.4);
+  }
+  
+  .rectangle p {
+    font-size: 14px; /* Adjust text size */
+  }
+  
+  @media (max-width: 768px) {
+    .wcu-spacing h1 {
+      font-size: 36px; /* Adjust title size for mobile */
+    }
+  
+    .square-image {
+      max-width: 200px; /* Reduce max-width on smaller screens */
+    }
+  
+    .rectangle p {
+      font-size: 12px; /* Make text smaller on mobile */
+      padding: 8px; /* Adjust padding */
+    }
+  
+    .cta .btn {
+      padding: 10px 20px; /* Adjust button size for mobile */
+      font-size: 16px; /* Smaller font size for mobile */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .wcu-spacing h1 {
+      font-size: 36px; /* Further reduce font size for small screens */
+    }
+  
+    .square-image {
+      max-width: 150px; /* Further reduce max-width on very small screens */
+    }
+  
+    .rectangle p {
+      font-size: 10px; /* Smaller font size for very small screens */
+    }
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  /* Adding hover effect to pause the animation */
+  .carousel-wrapper:hover .carousel-track {
+    animation-play-state: paused; /* Pause animation on hover */
+  }
+  
+  .carousel-wrapper::before,
+  .carousel-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .carousel-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, white, transparent);
+  }
+  
+  .carousel-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, white, transparent);
+  }
+  
+  .carousel-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll-left 30s linear infinite;
+    transition: animation-play-state 0.3s ease; /* Smooth transition for pause effect */
+  }
+  
+  .carousel-items {
+    display: flex;
+  }
+  
+  .card-item {
+    min-width: 25vw;
+    flex-shrink: 0;
+    padding: 0 15px; /* Add spacing between items */
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card-item {
+      min-width: 60vw; /* Two items visible on tablets */
+    }
+    .square-image {
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-item {
+      min-width: 90vw; /* One item mostly visible on mobile */
+    }
+  
+    .rectangle p {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .square-image {
+      max-width: 300px;
+    }
+  }
+  
+
+    /* end Why chose us */
+
+  /* Footer */
+  .footer-text{
+    font-weight: Bold;
+    font-size: 46px;
+    line-height: 1.1;
+    color: #B47F69;
+  }
+  .footer-spacing{
+    padding-block: 30px;
+  }
+
+  @media (max-width: 576px) {
+    .footer-text {
+      font-size: 36px;
+    }
+  }
+
+ 
+  
+
+
