@@ -51,6 +51,19 @@ const ContactUs = () => {
               <i className="bi bi-briefcase-fill" style={{ color: '#B47F69' }}></i>{' '}
               8AM–5PM on Weekdays and Saturday, Closed on Sunday
             </p>
+
+            {/* Review CTA */}
+            <div className="mt-4">
+              <p className="fw-normal mb-2">Have we worked with you before? We'd love your feedback.</p>
+              <a
+                href="https://www.yelp.com/biz/mayks-services-portland" // Replace with actual review link
+                className="btn btn-outline-light fw-semibold"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Leave a Review
+              </a>
+            </div>
           </div>
 
           {/* Contact Us Form */}
@@ -98,7 +111,6 @@ const ContactUs = () => {
               <button
                 type="submit"
                 className="btn button-1 text-white fw-semibold px-5 py-3"
-                
               >
                 Send
               </button>
